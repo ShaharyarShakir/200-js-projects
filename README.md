@@ -1,2 +1,2 @@
-A E-Comernce Site using HTML CSS and JS with cart and login page
+A E-Commerce Site using HTML CSS and JS with cart and login page
 
