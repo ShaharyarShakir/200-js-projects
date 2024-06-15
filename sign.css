@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 nav {
   display: flex;
@@ -58,4 +59,12 @@ header h1 {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.or{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
 }
