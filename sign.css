@@ -24,6 +24,8 @@ main {
 }
 header h1 {
   margin: 40px 0 0 60px;
+  font-size: 2rem;
+  font-weight: 700;
 }
 .wrapper {
   margin-top: 20px;
