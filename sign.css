@@ -12,16 +12,17 @@ nav {
   color: white;
   background: url(asserts/images/bg.jpg) no-repeat center center/cover;
   background-color: black;
+position: relative;
 }
 main {
   width: 450px;
   height: 600px;
- margin-top: 70px;
+ margin-top: 180px;
   border-radius: 5px;
   backdrop-filter: invert(40%);
   background-color: rgba(0, 0, 0, 0.7);
   display: grid;
-  position: relative;
+  position: absolute;
 }
 header h1 {
   margin: 40px 0 0 60px;
@@ -127,4 +128,22 @@ header h1 {
 .para-1 a:hover{
   text-decoration: underline;
   color: #ffffff;
+}
+.para-2 {
+  margin: 20px 10px 10px 60px;
+  color: #757272;
+  font-size: 15px;
+}
+.para-2 a{
+  text-decoration: none;
+  color: #0071eb;
+
+}
+.para-2 a:hover{
+  text-decoration: underline;
+
+}
+footer{
+  background-color: black;
+  padding: 100px;
 }
