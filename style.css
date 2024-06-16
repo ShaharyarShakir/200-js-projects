@@ -281,13 +281,64 @@ footer .questions {
   }
 }
 
-.footer a {
-  font-size: 14px;
-  color: white;
+footer, .footer-body {
+  background-color: black;
+  padding: 100px;
 }
-
-.footer-item {
+.footer-left{
   display: flex;
-  flex-direction: column;
-  gap: 23px;
+}
+.footer-ul-1{
+  margin-top: 50px;
+  list-style: none;
+}
+.footer-ul-1 li{
+  margin-top: 30px;
+}
+.footer-ul-1 li a{
+  color: #757272;
+
+}
+.footer-ul-1 li a button{
+  padding: 10px 10px 5px 10px;
+  background-color: #030303;
+  border: 1px solid white;
+  color: #757272;
+}
+.footer-ul-2{
+  margin: 100px 0 0 100px;
+  list-style: none;
+  
+}
+.footer-ul-2 li{
+  margin-top: 30px;
+}
+.footer-ul-2 li a{
+  
+  color: #757272;
+  margin-top: 10px;
+}
+.footer-ul-3{
+  margin: 100px 0 0 100px;
+  list-style: none;
+}
+.footer-ul-3 li{
+  margin-top: 30px;
+}
+.footer-ul-3 li a{
+  
+  color:#757272;
+  margin-top: 10px;
+}
+.footer-ul-4{
+  margin: 100px 0 0 100px;
+  list-style: none;
+}
+.footer-ul-4 li{
+  margin-top: 30px;
+}
+.footer-ul-4 li a{
+  
+  color: #757272;
+  margin-top: 10px;
 }
