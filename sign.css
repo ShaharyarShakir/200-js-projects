@@ -107,3 +107,11 @@ header h1 {
   text-decoration: underline;
   color: #757272;
 }
+.wrapper-1{
+  margin: 20px 10px 10px 60px;
+}
+.wrapper-1 label{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 200;
+}
