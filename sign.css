@@ -207,6 +207,8 @@ footer, .footer-body {
 @media screen and (max-width:1000px) {
   nav {
     max-width: 90vw;
+    background-color: black;
+    background-image: none;
   }
   footer{
     display: none;
