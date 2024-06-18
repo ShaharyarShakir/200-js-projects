@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+      sans-serif;
+  }
+  nav {
+    margin: 10px;
+  }
+  .logo {
+    margin: 20px;
+  }
+  .logo a {
+    text-decoration: none;
+
+    color: #333;
+    float: right;
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 30px;
+  }
+  .logo a:hover {
+    text-decoration: underline;
+  }
+  .container-center {
+    text-align: center;
+    margin: 30px 10px 40px 10px;
+  }
+  .container-center span {
+    text-align: center;
+    margin: 30px 40px 40px 40px;
+  }
+  .logo-1 {
+    background: url(asserts/images/Devices.png) no-repeat 50% 50%;
+    background-size: 260px;
+    height: 90px;
+    margin-top: 120px;
+  }
+  .container-center h1 {
+    margin: 30px 400px 30px 450px;
+    font-size: 32px;
+   
+  }
+  .container-center p{
+    margin: 10px 500px 0 500px;
+    font-size: 16px;
+  }
+ 
+  .container-center a button{
+    margin-top: 20px;
+    width: 24rem;
+    text-align: center;
+    padding: 2px;
+    height: 5rem;
+    font-size: 30px;
+    font-weight: 400;
+    background-color: red;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.container-center a button:hover{
+  cursor: pointer;
+  background-color: rgb(238, 64, 64);
+}
