@@ -1,0 +1,9 @@
+@use '../util/' as u;
+.header{
+    &__wrapper{
+        padding-block: 20px;
+        @include u.breakpoint(large){
+            padding-block: 40px;
+        }
+    }
+}

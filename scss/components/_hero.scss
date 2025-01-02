@@ -1,0 +1,9 @@
+@use '../util/' as u;
+.hero{
+    &__wrapper{
+        padding-block-start: 20px;
+        @include u.breakpoint(large){
+            padding-block-start: 40px;
+        }
+    }
+}

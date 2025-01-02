@@ -8,7 +8,7 @@ h3 {
 }
 
 h1 {
-    @include u.fs-fluid(u.rem(375), u.rem(1200), u.rem(48), u.rem(64));
+    @include u.fs-fluid(u.rem(375), u.rem(1200), u.rem(44), u.rem(60));
 }
 
 h2 {
@@ -24,8 +24,7 @@ p{
     line-height: 1.5;
     max-width: 60ch;
     &.small{
-        @include u.fs-fluid(u.rem(375), u.rem(1200), u.rem(16), u.rem(18));
-
+        @include u.fs-fluid(u.rem(375), u.rem(1200), u.rem(16), u.rem(18)); 
     }
     &.large{
         @include u.fs-fluid(u.rem(375), u.rem(1200), u.rem(16), u.rem(20));
