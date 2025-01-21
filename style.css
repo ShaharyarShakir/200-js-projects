@@ -1,157 +1,18 @@
-/* roboto-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/roboto-v32-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* roboto-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/fonts/roboto-v32-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-:root {
-  --color-bg: hsl(244, 88%, 10%);
-  --color-text: hsl(0, 0%, 94%);
-  --color-accent: hsl(169, 100%, 47%);
-  --color-accent2: hsl(246, 41%, 28%);
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 4 | @forward 'projects';
+ *   | ^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   scss\components\_index.scss 4:1  @forward
+ *   scss\style.scss 2:1              root stylesheet */
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-}
-
-img {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  max-width: 100%;
-  height: auto;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 4 \2502  @forward 'projects';\a   \2502  ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\components\\_index.scss 4:1  @forward\a   scss\\style.scss 2:1              root stylesheet";
 }
-
-a {
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
-  line-height: 1;
-}
-
-h1 {
-  font-size: 2.75rem;
-  font-size: clamp(2.75rem, 2.2954545455rem + 1.9393939394vw, 3.75rem);
-}
-
-h2 {
-  font-size: 2.25rem;
-  font-size: clamp(2.25rem, 1.9090909091rem + 1.4545454545vw, 3rem);
-}
-
-h3 {
-  font-size: 1.5rem;
-  font-size: clamp(1.5rem, 1.1590909091rem + 1.4545454545vw, 2.25rem);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-p {
-  line-height: 1.5;
-  max-width: 60ch;
-}
-p.small {
-  font-size: 1rem;
-  font-size: clamp(1rem, 0.9431818182rem + 0.2424242424vw, 1.125rem);
-}
-p.large {
-  font-size: 1rem;
-  font-size: clamp(1rem, 0.8863636364rem + 0.4848484848vw, 1.25rem);
-}
-
-.wrapper {
-  width: min(100% - 40px, 73.75rem);
-  margin-inline: auto;
-  padding-block: 30px;
-}
-@media (width >= 75em) {
-  .wrapper {
-    padding-block: 60px;
-  }
-}
-
-.header__wrapper {
-  padding-block: 20px;
-}
-@media (width >= 75em) {
-  .header__wrapper {
-    padding-block: 40px;
-  }
-}
-.header__home {
-  display: grid;
-  place-items: center;
-  width: 2.875rem;
-  height: 2.875rem;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  font-weight: 900;
-  background: var(--color-accent);
-  color: var(--color-bg);
-  transition: background 150ms ease-in-out;
-}
-@media (width >= 75em) {
-  .header__home {
-    width: 3.75rem;
-    height: 3.75rem;
-    font-size: 1.75rem;
-  }
-}
-.header__home:hover {
-  background: var(--color-text);
-}
-
-.hero {
-  display: grid;
-  gap: 30px;
-  align-items: center;
-}
-@media (width >= 43.75em) {
-  .hero {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (width >= 75em) {
-  .hero {
-    grid-template-columns: 3fr 2fr;
-  }
-}
-.hero__wrapper {
-  padding-block-start: 20px;
-}
-@media (width >= 75em) {
-  .hero__wrapper {
-    padding-block-start: 40px;
-  }
-}
-.hero__text p:last-child {
-  margin-block-end: 0;
-}
-.hero__image {
-  max-width: 28.75rem;
-}
-.hero__image img {
-  border-radius: 20px;
-}
-
-/*# sourceMappingURL=style.css.map */
