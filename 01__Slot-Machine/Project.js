@@ -47,7 +47,7 @@ const getBet = (balance, lines) => {
  while (true) {
   const betAmount = prompt("Enter the number : ")
   const betAmountParse = parseFloat(betAmount);
-  if (isNaN(betAmountParse) || betAmountParse <= 0 || betAmount > (balance / lines)) {
+  if (isNaN(betAmountParse) || betAmountParse <= 0 || betAmountParse > (balance / lines)) {
    console.log("Invalid input!!, try again");
   } else {
    return betAmountParse;
@@ -61,8 +61,9 @@ const spin = () => {
    symbols.push(key)
   }
  }
- const reels = [[], [], []]
+ const reels = []
  for (let i = 0; i < COLS; i++) {
+  reels.push([])
   const reelSymbols = [...symbols]
   for (let j = 0; j < ROWS; j++) {
    const randomIndex = Math.floor(Math.random() * reelSymbols.length)
@@ -74,12 +75,77 @@ const spin = () => {
  }
  return reels
 }
-const reels = spin()
-console.log(reels);
+const transpose = (reels) => {
+ const rows = []
+ for (let i = 0; i < ROWS; i++) {
+  rows.push([])
+  for (let j = 0; j < COLS; j++) {
+   rows[i].push(reels[j][i])
+  }
+ }
+ return rows;
+}
+const spinMachine = (rows) => {
+ for (const row of rows) {
+  let rowString = " ";
+  for (const [i, symbol] of row.entries()) {
+   rowString += symbol
+   if (i != row.length - 1) {
+    rowString += " | "
+   }
+  }
+  console.log(rowString);
+ }
+}
+const getResult = (rows, bet, lines) => {
+ let winnings = 0;
+ for (let i = 0; i < lines; i++) {
+  const symbols = rows[i]
+  let allSame = true;
+  for (const symbol of symbols) {
+   if (symbol != symbols[0]) {
+    allSame = false
+    break;
+   }
+  }
+  if (allSame) {
+   winnings += bet * SYMBOLS__Value[symbols[0]]
+  }
+ }
+ return winnings
+}
+const playGame = () => {
+ let balance = deposit()
+ while (true) {
+  console.log("Your current balance is " + balance);
+  const lines = getLines()
+  const betAmount = getBet(balance, lines)
+  balance -= betAmount * lines
+  const reels = spin()
+  const rows = transpose(reels)
+  spinMachine(rows)
+  const winnings = getResult(rows, betAmount, lines)
+  balance += winnings
+  console.log("You have won $" + winnings.toString());
+  if (balance <= 0) {
+   console.log("You ran out of balance 🥲 😔 😭");
+   break;
+  }
+  const playAgain = prompt("Do you want to play again(y/n)? ")
+  if (playAgain != 'y'){
+   console.log("Better luck next time!! Come again");
 
-let  balance = deposit()
-const lines = getLines()
-const betAmount = getBet(balance, lines)
+   break;
+  }
+ }
+
+}
+playGame()
+
+
+
+
+
 
 
 
