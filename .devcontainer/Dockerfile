@@ -3,7 +3,7 @@ FROM archlinux:latest
 
 # Update system and install Node.js + npm + dev tools
 RUN pacman -Syu --noconfirm && \
-    pacman -S --noconfirm nodejs npm base-devel curl git
+    pacman -S --noconfirm  base-devel curl git
 
 # Add a non-root user
 RUN useradd -m nodeuser
