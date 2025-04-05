@@ -1,11 +1,17 @@
 {
-	"name": "js Node.js project with Arch and Neovim",
+	"name": "Node on Arch Linux",
 	"build": {
-		"dockerfile": "Dockerfile"
+	  "dockerfile": "Dockerfile"
 	},
-	"remoteUser": "node",
-	"workspaceFolder": "/workspace", // Ensures the workspace is properly mapped in the container
-	"forwardPorts": [
-		3000
-	] // Forward port if your Node.js app runs on this port
-}
+	"settings": {
+	  "terminal.integrated.shell.linux": "/bin/bash"
+	},
+	"extensions": [
+	  "dbaeumer.vscode-eslint",
+	  "esbenp.prettier-vscode"
+	],
+	"forwardPorts": [3000],
+	"postCreateCommand": "npm install",
+	"remoteUser": "nodeuser"
+  }
+  
