@@ -4,7 +4,7 @@
 	  "dockerfile": "Dockerfile"
 	},
 	"forwardPorts": [3000],
-	"postCreateCommand": "npm install",
+	"postCreateCommand": "",  // or use "echo No package.json"
 	"remoteUser": "nodeuser"
   }
   
