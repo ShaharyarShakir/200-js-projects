@@ -1,8 +1,11 @@
-// See https://containers.dev/implementors/json_reference/ for configuration reference
 {
-	"name": "js Node.js project",
+	"name": "js Node.js project with Arch and Neovim",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
-  "remoteUser": "node"
+	"remoteUser": "node",
+	"workspaceFolder": "/workspace", // Ensures the workspace is properly mapped in the container
+	"forwardPorts": [
+		3000
+	] // Forward port if your Node.js app runs on this port
 }
