@@ -10,3 +10,14 @@
 .items{
 	align-items: center;
 }
+.invert{
+	filter: invert(1);
+
+}
+.rounded{
+	border-radius: 8px;
+}
+.b-grey{
+	
+	background-color: var(--bg-grey) ;
+}
