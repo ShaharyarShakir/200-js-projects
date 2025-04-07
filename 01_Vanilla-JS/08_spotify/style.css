@@ -1,29 +1,75 @@
-:root{
+:root {
 	--bg-grey: #121212;
 }
-*{
+
+* {
 	margin: 0;
 	padding: 0;
-}body{
+}
+
+body {
 	background-color: black;
 	color: white;
 }
 
-.left{
+.left {
 	width: 25vw;
 }
-.right{
+
+.right {
 	width: 75vw;
 }
-.home, .library{
+
+.home,
+.library {
 	padding: 15px;
 	margin: 8px;
-
 }
-.home ul li{
+
+.home ul li {
 	list-style: none;
 	width: 15px;
 	display: flex;
 	gap: 12px;
 	margin-top: 10px;
+}
+
+.library {
+	min-height: 80vh;
+	position: relative;
+}
+
+.heading {
+	display: flex;
+	width: 100%;
+	gap: 10px;
+	padding-top: 14px;
+	padding: 23px 14px;
+	font-weight: bold;
+	align-items: center;
+	font-size: 13px;
+}
+
+.heading img {
+	width: 25px;
+}
+
+.footer {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 13px;
+	color: grey;
+	gap: 13px;
+	position: absolute;
+	bottom: 0;
+	padding: 10px 8px;
+}
+
+.footer a {
+	text-decoration: none;
+	color: grey;
+}
+.footer a:hover{
+	text-decoration: underline;
+	cursor: pointer;
 }
