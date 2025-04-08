@@ -1,4 +1,5 @@
 :root {
+	--a: 0;
 	--bg-grey: #121212;
 }
 
@@ -69,7 +70,51 @@ body {
 	text-decoration: none;
 	color: grey;
 }
-.footer a:hover{
+
+.footer a:hover {
 	text-decoration: underline;
 	cursor: pointer;
+}
+
+.right {
+	margin: 8px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 6px;
+}
+
+.cardContainer {
+	margin: 30px;
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	overflow-y: auto;
+	max-height: 60vh;
+}
+
+.card {
+	width: 200px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #252525;
+	position: relative;
+	transition: all 0.9s;
+}
+
+.card:hover {
+	background-color: rgb(105, 103, 103);
+	cursor: pointer;
+	--a: 1;
+}
+
+.card>* {
+	padding-top: 10px;
+}
+
+.card img {
+	width: 100%;
+	object-fit: contain;
 }
