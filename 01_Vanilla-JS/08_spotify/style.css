@@ -36,7 +36,7 @@ body {
 }
 
 .library {
-	min-height: 80vh;
+	min-height: 70vh;
 	position: relative;
 }
 
@@ -63,7 +63,7 @@ body {
 	gap: 13px;
 	position: absolute;
 	bottom: 0;
-	padding: 10px 8px;
+	padding: 8px 6px;
 }
 
 .footer a {
@@ -77,6 +77,7 @@ body {
 }
 
 .right {
+	position: relative;
 	margin: 8px;
 }
 
@@ -144,7 +145,23 @@ body {
 	outline: none;
 	padding: 10px 16px;
 	cursor: pointer;
+	font-weight: bold;
 }
-.login:hover{
+
+.login:hover {
 	padding-inline: 11px;
+}
+
+.playbar {
+	position: absolute;
+	bottom: 0;
+	background-color: green;
+	width: 98%;
+	padding: 12px;
+}
+
+.songButtons {
+	display: flex;
+	justify-content: center;
+	gap: 4px;
 }
