@@ -118,3 +118,33 @@ body {
 	width: 100%;
 	object-fit: contain;
 }
+
+.button>* {
+	margin-inline: 10px;
+}
+
+.signup {
+	background-color: black;
+	color: white;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.signup:hover {
+	font-size: 0.9rem;
+}
+
+.login {
+	background-color: white;
+	color: black;
+	border: 2px solid white;
+	border-radius: 21px;
+	outline: none;
+	padding: 10px 16px;
+	cursor: pointer;
+}
+.login:hover{
+	padding-inline: 11px;
+}
